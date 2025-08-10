@@ -29,7 +29,7 @@ app.use(cookieParser());
 
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173',"https://green-cart-frontend-ten.vercel.app"],
   credentials: true,
 }));
 
