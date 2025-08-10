@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(`${process.env.MONGODB_URI}/greencart`);
+    await mongoose.connect(`${process.env.MONGODB_URI}`);
 
     console.log("✅ MongoDB Connected");
   } catch (error) {
